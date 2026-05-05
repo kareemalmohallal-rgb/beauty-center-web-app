@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="dash-header">
+
+  <h2>🧑‍💼 لوحة التحكم</h2>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="services.html">الخدمات</a>
+    <a href="booking.html">الحجز</a>
+  </nav>
+
+  <button class="logout-btn" onclick="logout()">تسجيل خروج</button>
+
+</header>
+
+
+<section class="dash">
+
+  <div class="welcome">
+    <h3>مرحباً 👋 <span id="username"></span></h3>
+    <p>إدارة الحجوزات الخاصة بالمركز</p>
+  </div>
+
+  <h2>📅 الحجوزات</h2>
+
+  <div id="bookings" class="booking-grid"></div>
+
+</section>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

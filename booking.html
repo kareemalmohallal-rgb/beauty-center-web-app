@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>حجز موعد</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Beauty 💄</div>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="services.html">الخدمات</a>
+    <a href="booking.html">حجز موعد</a>
+
+    <a href="dashboard.html">لوحة التحكم</a>
+    <a href="login.html">تسجيل الدخول</a>
+  </nav>
+</header>
+
+
+<section class="section booking-section">
+
+  <div class="booking-card">
+
+    <h2>احجز موعدك ✨</h2>
+
+    <!-- الخدمة -->
+    <div class="field">
+      <label>اسم الخدمة</label>
+      <input type="text" id="serviceName" placeholder="مثال: تنظيف البشرة">
+    </div>
+
+    <!-- العميل -->
+    <div class="field">
+      <label>اسم العميل</label>
+      <input type="text" id="userName" placeholder="اسمك">
+    </div>
+
+    <!-- التاريخ والوقت (نفس السطر) -->
+    <div class="row">
+
+      <div class="field">
+        <label>التاريخ</label>
+        <input type="date" id="date">
+      </div>
+
+      <div class="field">
+        <label>الوقت</label>
+        <input type="time" id="time">
+      </div>
+
+    </div>
+
+    <!-- ملاحظات -->
+    <div class="field">
+      <label>ملاحظات (اختياري)</label>
+      <textarea id="notes" placeholder="أي تفاصيل إضافية..."></textarea>
+    </div>
+
+    <!-- زر -->
+    <button class="btn" onclick="book()">تأكيد الحجز</button>
+
+    <!-- رسالة -->
+    <div id="msg"></div>
+
+  </div>
+
+</section>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
